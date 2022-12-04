@@ -1,0 +1,202 @@
+:root { 
+    --red:hsl(1, 90%, 64%); 
+    --White: hsl(0, 0%, 100%);
+    --Blue: hsl(219, 85%, 26%); 
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+    
+    -Fontsize:16px; 
+    }
+    
+    @font-face {
+        font-family: Plus_Jakarta_Sans ;
+        font-style: normal;
+        font-weight: 500;
+        src: url(/Front-End-Notification-challeneges-/PlusJakartaSans-VariableFont_wght.ttf);
+    }
+    
+    
+    * 
+    { 
+     font-family: 'Plus_Jakarta_Sans'; 
+        
+        color: var(--Grayishblue); 
+    }
+    body { 
+        margin: auto;
+        background-color: var(--Verylightgrayishblue);
+    }
+    
+    main { 
+        max-width: 500px;
+        padding: 40px;
+        margin: auto;
+        background-color: var(--White);
+    
+    }
+    
+    
+    #notification-container{ 
+        display: flex;
+        justify-content: space-between;
+            align-items: baseline;
+        flex-wrap: nowrap;
+      
+    }
+    
+    #notification-container>div { 
+        display: flex;
+        align-items: baseline;
+        gap: 1em;
+    }
+    
+    #notification-container>div>h1 { 
+        color: black; 
+    }
+    
+    #notification-container>div>p { 
+        text-align: center;
+        background-color: var(--Blue);
+        color: var(--White); 
+        font-size: 20px;
+        height: 20px;
+        width: 25px;
+        padding: .25em;
+        border-radius: 20%;
+    
+    }
+    
+    #notification-container>button { 
+        font-weight: 500;
+        font-size: 18px;
+        border: none; 
+        background-color: var(--White);
+    }
+    
+    #notification-container>button:hover { 
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    img { 
+        position: relative;
+        top: 10px; 
+        height: 40px; 
+        width: 40px;
+        padding-right: 10px;
+    }
+    
+    
+    
+    
+    .names { 
+        font-weight: bold;
+        color: black
+    }
+    
+    .names:hover{
+        cursor: pointer;
+        color: var(--Blue) !important;
+    }
+    .timeline { 
+        position: relative;
+        top: -10px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .hidden{
+        display: none !important;
+    }
+    
+    
+    .span-dot { 
+        display: inline-block; 
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: var(--red)
+    }
+    
+    
+    
+    
+    
+    .user-comment { 
+        border: 1px var(--Lightgrayishblue2) solid; 
+        padding: 1em;
+    
+    }
+    
+    .user-comment:hover {
+        cursor: pointer;
+    }
+    
+    /* GRID SYSTEM */
+    .profile-container {
+        width: 100%;
+        display: grid; 
+        grid-template-columns:.1fr 1fr; 
+        grid-template-rows: .1fr .1fr; 
+        grid-template-areas: 
+          "One Two two"
+          "One three five"
+          "one three four"; 
+         
+      }
+      .one { grid-area: one;}
+      .two { grid-area: two;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          ". five"
+          ". five"
+          ". . .";  }
+      .three { 
+        grid-area: three;
+    }
+      .four {grid-area: four;}
+      .five{grid-area: five;}
+    
+    
+    a:link { 
+        color: var(--Blue);
+        text-decoration: none;
+    }
+    
+      a:active { 
+        color: var(--Blue);
+        text-decoration: none;
+      }
+      a:visited { 
+        color: var(--Grayishblue);
+        text-decoration: none;
+      }
+    
+    
+     
+    
+      .attachment:hover {
+        cursor: pointer;
+      }
+    
+    /* Notification  */
+    
+    .active { 
+        background-color: var(--Lightgrayishblue1);
+    }
+    
+    .active:hover { 
+        cursor: pointer;
+    }
+    
+    
