@@ -16,7 +16,7 @@
         font-family: Plus_Jakarta_Sans ;
         font-style: normal;
         font-weight: 500;
-        src: url(/Front-End-Notification-challeneges-/PlusJakartaSans-VariableFont_wght.ttf);
+        src: url(/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf); 
     }
     
     
@@ -137,6 +137,7 @@
     
     .user-comment:hover {
         cursor: pointer;
+        background-color: var(--Lightgrayishblue1)
     }
     
     /* GRID SYSTEM */
@@ -177,10 +178,7 @@
         color: var(--Blue);
         text-decoration: none;
       }
-      a:visited { 
-        color: var(--Grayishblue);
-        text-decoration: none;
-      }
+   
     
     
      

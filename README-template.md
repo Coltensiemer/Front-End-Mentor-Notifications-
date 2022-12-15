@@ -55,35 +55,45 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Lessons Learned is the useage of grid to better lay out the profiles. Using grid template areas really helped.  
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+Example of the main profile container: 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+  .profile-container {
+        width: 100%;
+        display: grid; 
+        grid-template-columns:.1fr 1fr; 
+        grid-template-rows: .1fr .1fr; 
+        grid-template-areas: 
+          "One Two two"
+          "One three five"
+          "one three four"; 
+ 
+      }
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
+Another Task was to set notification links to active or visted. 
+Using ::'link' and ::'active' help to show when it have already been clicked. 
+
+    a:link { 
+        color: var(--Blue);
+        text-decoration: none;
+    }
+    
+      a:active { 
+        color: var(--Blue);
+        text-decoration: none;
+      }
+
+
+
+
 
 ### Continued development
 
